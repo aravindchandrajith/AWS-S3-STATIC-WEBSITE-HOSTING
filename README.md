@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio — Hosted on AWS S3 + CloudFront
+#  Personal Portfolio — Hosted on AWS S3 + CloudFront
 
 A fully static personal portfolio website deployed on **AWS S3** with **CloudFront CDN**, custom domain via **Route 53**, HTTPS via **ACM**, and automated CI/CD using **GitHub Actions**.
 
@@ -8,7 +8,7 @@ A fully static personal portfolio website deployed on **AWS S3** with **CloudFro
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Developer → GitHub Push
@@ -23,7 +23,7 @@ Developer → GitHub Push
               ↓
      Route 53 (DNS) + ACM (HTTPS)
               ↓
-          End User 🌍
+          End User 
 ```
 
 ---
@@ -40,7 +40,7 @@ Developer → GitHub Push
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 aws-s3-portfolio/
@@ -57,7 +57,7 @@ aws-s3-portfolio/
 
 ---
 
-## ⚙️ Setup & Deployment Steps
+##  Setup & Deployment Steps
 
 ### 1. Create S3 Bucket
 ```bash
@@ -107,7 +107,7 @@ Every push to `main` automatically deploys and invalidates CloudFront cache.
 
 ---
 
-## 💡 Key Concepts Demonstrated
+##  Key Concepts Demonstrated
 
 - **Static Website Hosting on S3**: Serving HTML/CSS/JS files directly from S3 without any server
 - **CDN with CloudFront**: Reduces latency by caching content at 400+ global edge locations
@@ -117,7 +117,7 @@ Every push to `main` automatically deploys and invalidates CloudFront cache.
 
 ---
 
-## 📊 Cost Breakdown (Approximate)
+##  Cost Breakdown (Approximate)
 
 | Service | Monthly Cost |
 |---|---|
@@ -129,7 +129,7 @@ Every push to `main` automatically deploys and invalidates CloudFront cache.
 
 ---
 
-## 🤝 Connect
+##  Connect
 
 - LinkedIn: [linkedin.com/in/aravindchandrajith](https://linkedin.com)
 - Email: aravindchandrajith@example.com
