@@ -131,9 +131,6 @@ Every push to `main` automatically deploys and invalidates CloudFront cache.
 
 ## 🤝 Connect
 
-- LinkedIn: [linkedin.com/in/arjunkrishnan](https://linkedin.com)
-- Email: arjun@example.com
+- LinkedIn: [linkedin.com/in/aravindchandrajith](https://linkedin.com)
+- Email: aravindchandrajith@example.com
 
----
-
-*Built with ❤️ and deployed on AWS*
