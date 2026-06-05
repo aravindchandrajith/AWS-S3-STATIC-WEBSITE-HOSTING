@@ -59,10 +59,10 @@ aws-s3-portfolio/
 
 ##  Setup & Deployment Steps
 
-### 1. Create S3 Bucket
+### 1. Created S3 Bucket
 ```bash
 # Create bucket
-aws s3 mb s3://your-portfolio-bucket-name --region us-east-1
+aws s3 mb s3://aws-static-website-hosting --region us-east-1
 
 # Enable static website hosting
 aws s3 website s3://aws-static-website-hosting \
@@ -70,7 +70,7 @@ aws s3 website s3://aws-static-website-hosting \
   --error-document index.html
 ```
 
-### 2. Set Bucket Policy (Public Read)
+### 2. Set-up Bucket Policy (Public Read)
 ```json
 {
   "Version": "2012-10-17",
@@ -86,18 +86,18 @@ aws s3 website s3://aws-static-website-hosting \
 }
 ```
 
-### 3. Create CloudFront Distribution
+### 3. Createdd CloudFront Distribution
 - Origin: your S3 bucket website endpoint
 - Default root object: `index.html`
 - HTTPS: Redirect HTTP to HTTPS
 - SSL certificate: Request from ACM (us-east-1 region)
 
 ### 4. Configure Route 53
-- Create a hosted zone for your domain
-- Add an **A record (Alias)** pointing to CloudFront distribution
+- Created a hosted zone for the domain
+- Added an **A record (Alias)** pointing to CloudFront distribution
 
 ### 5. GitHub Actions CI/CD
-Add these secrets to your GitHub repo:
+Added these secrets to the GitHub repo:
 - `AWS_ACCESS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 - `S3_BUCKET_NAME`
