@@ -65,7 +65,7 @@ aws-s3-portfolio/
 aws s3 mb s3://your-portfolio-bucket-name --region us-east-1
 
 # Enable static website hosting
-aws s3 website s3://your-portfolio-bucket-name \
+aws s3 website s3://aws-static-website-hosting \
   --index-document index.html \
   --error-document index.html
 ```
@@ -80,7 +80,7 @@ aws s3 website s3://your-portfolio-bucket-name \
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::your-portfolio-bucket-name/*"
+      "Resource": "arn:aws:s3:::aws-static-website-hosting/*"
     }
   ]
 }
