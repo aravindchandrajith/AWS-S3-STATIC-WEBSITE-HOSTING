@@ -93,9 +93,9 @@ Every push to `main` automatically deploys and invalidates CloudFront cache.
 ##  Key Concepts Demonstrated
 
 - **Static Website Hosting on S3**: Serving HTML/CSS/JS files directly from S3 without any server
-- **CDN with CloudFront**: Reduces latency by caching content at 400+ global edge locations
-- **HTTPS Security**: ACM provides free SSL certificates, CloudFront enforces HTTPS
-- **Infrastructure as Code mindset**: Reproducible deployment via GitHub Actions
+- **CDN with CloudFront**: Reduces latency by caching content at 400+ global edge locations. Users loads the server from the nearest servers
+- **HTTPS Security**: ACM provides free SSL certificates, CloudFront enforces HTTPS. All http requests are auto redirected to https
+- **Infrastructure as Code mindset**: Reproducible deployment via GitHub Actions. So that anyone can clone and redeploy this from scratch
 - **Cost Efficiency**: S3 static hosting costs ~$0.023/GB — near zero for a portfolio site
 
 ---
