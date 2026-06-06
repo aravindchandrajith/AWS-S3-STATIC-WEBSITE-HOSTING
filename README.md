@@ -40,23 +40,6 @@ Developer → GitHub Push
 
 ---
 
-##  Project Structure
-
-```
-aws-s3-portfolio/
-├── index.html              # Main portfolio page
-├── css/
-│   └── style.css           # Stylesheet
-├── js/
-│   └── main.js             # JavaScript (scroll effects, nav)
-├── .github/
-│   └── workflows/
-│       └── deploy.yml      # GitHub Actions CI/CD pipeline
-└── README.md
-```
-
----
-
 ##  Setup & Deployment Steps
 
 ### 1. Created S3 Bucket
